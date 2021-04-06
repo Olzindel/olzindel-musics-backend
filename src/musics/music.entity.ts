@@ -1,12 +1,12 @@
-import { Field, ObjectType } from "@nestjs/graphql";
+import { Field, ObjectType } from '@nestjs/graphql';
 
-@ObjectType()
+@ObjectType('Music')
 export class MusicEntity {
   @Field()
   id!: string;
   @Field()
   title!: string;
-  @Field()
+  @Field({ nullable: true })
   description?: string;
   @Field()
   linkToFile!: string;

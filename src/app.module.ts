@@ -6,6 +6,7 @@ import { MusicsModule } from './musics/musics.module';
   imports: [
     GraphQLModule.forRoot({
       autoSchemaFile: 'schema.gql',
+
     }),
     MusicsModule,
   ],
